@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="drawing-board">
+                <canvas></canvas>
+            </div>
+            <div class="action-buttons">
+                <button class="btn undo-board">undo</button>
+                <button class="btn redo-board">redo</button>
+                <button class="btn save-board">save</button>
+                <button class="btn clear-board">clear board</button>
+            </div>
+        </div>
+        <div class="tools-section">
+            <div class="row tool-container">
+                <label for="" class="title">options</label>
+                <ul class="options">
+                    <li class="option active tool" id="brush">
+                        <img src="img/images.png" alt="">
+                        <span>brush</span>
+                    </li>
+                    <li class="option active tool" id="eraser">
+                       <img src="img/eraser-icon-vector-trendy-flat-260nw-1649610052.webp" alt="">
+                        <span>eraser</span>
+                    </li>
+                    <li class="option">
+                        <input type="range" id="size-slider" min="1" max="30" value="5">
+                    </li>
+                </ul>
+            
+        </div>
+        <div class="row tool-container">
+            <label class="title">shapes</label>
+            <ul class="options">
+                <li class="option tool" id="rectangle">
+                   <img src="img/33848.png" alt="">
+                    <span>rectangle</span>
+                </li>
+                <li class="option tool" id="triangle">
+                   <img src="img/shape_triangle.png" alt="">
+                    <span>triangle</span>
+                </li>
+                <li class="option tool" id="circle">
+                  <img src="img/icon.png" alt="">
+                    <span>circle</span>
+                </li>
+                <li class="option">
+                    <input type="checkbox" name="" id="fill-color">
+                    <label for="fill-color">fill color</label>
+                  
+                </li>
+                </ul></div>
+                <div class="row colors tool-container">
+                    <label  class="title">colors</label>
+                    <ul class="options">
+<li class="option"></li>
+<li class="option selected"></li>
+<li class="option"></li>
+<li class="option"></li>
+<li class="option">
+    <input type="color" name="" id="color-picker">
+
+</li>
+                    </ul>
+                </div>
+                <div class="row tool-container">
+                    <label  class="title">resize</label>
+                    <ul class="options">
+                        <li class="option tool" id="zoomin">
+                            <span>zoom in</span>
+                        </li>
+                        <li class="option tool" id="zoomout">
+                            <span>zoom out</span>
+                        </li>
+                        </ul></div></div>
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
